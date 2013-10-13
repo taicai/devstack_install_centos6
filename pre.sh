@@ -1,5 +1,5 @@
 # move to163.com yum repo if necessarry
-# ./centos6_163.sh
+# ./163.sh
 
 # Install some prereqs / utilities 
 yum -y install mlocate vim openssl-devel euca2ools telnet Django14 git

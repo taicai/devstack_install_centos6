@@ -16,7 +16,7 @@ cat<<__EOF__>/etc/yum.repos.d/CentOS-Base.repo
 [base]
 name=CentOS-6 - Base - 163.com
 baseurl=http://mirrors.163.com/centos/6/os/\$basearch/
-#mirrorlist=http://mirrorlist.centos.org/?release=6&arch=$basearch&repo=os
+#mirrorlist=http://mirrorlist.centos.org/?release=6&arch=\$basearch&repo=os
 gpgcheck=1
 gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-6
 
@@ -24,7 +24,7 @@ gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-6
 [updates]
 name=CentOS-6 - Updates - 163.com
 baseurl=http://mirrors.163.com/centos/6/updates/\$basearch/
-#mirrorlist=http://mirrorlist.centos.org/?release=6&arch=$basearch&repo=updates
+#mirrorlist=http://mirrorlist.centos.org/?release=6&arch=\$basearch&repo=updates
 gpgcheck=1
 gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-6
 
@@ -32,7 +32,7 @@ gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-6
 [extras]
 name=CentOS-6 - Extras - 163.com
 baseurl=http://mirrors.163.com/centos/6/extras/\$basearch/
-#mirrorlist=http://mirrorlist.centos.org/?release=6&arch=$basearch&repo=extras
+#mirrorlist=http://mirrorlist.centos.org/?release=6&arch=\$basearch&repo=extras
 gpgcheck=1
 gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-6
 
@@ -40,7 +40,7 @@ gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-6
 [centosplus]
 name=CentOS-6 - Plus - 163.com
 baseurl=http://mirrors.163.com/centos/6/centosplus/\$basearch/
-#mirrorlist=http://mirrorlist.centos.org/?release=6&arch=$basearch&repo=centosplus
+#mirrorlist=http://mirrorlist.centos.org/?release=6&arch=\$basearch&repo=centosplus
 gpgcheck=1
 enabled=0
 gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-6
@@ -49,7 +49,7 @@ gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-6
 [contrib]
 name=CentOS-6 - Contrib - 163.com
 baseurl=http://mirrors.163.com/centos/6/contrib/\$basearch/
-#mirrorlist=http://mirrorlist.centos.org/?release=6&arch=$basearch&repo=contrib
+#mirrorlist=http://mirrorlist.centos.org/?release=6&arch=\$basearch&repo=contrib
 gpgcheck=1
 enabled=0
 gpgkey=http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-6
