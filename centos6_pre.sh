@@ -1,5 +1,9 @@
+# 163.com yum repo
+./centos6_163.sh
+
 # Install some prereqs / utilities 
 yum -y install mlocate vim openssl-devel euca2ools telnet Django14 git
+
 # EPEL is required for all the additional packages required by OpenStack
 rpm --import http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6
 rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
